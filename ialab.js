@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         IALab Utils
-// @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Make IALab interface better
 // @author       Goofables
-// @match        https://vcloud.ialab.dsu.edu/tenant/*
+// @match        https://vcloud.ialab.dsu.edu/*
 // @icon         https://www.google.com/s2/favicons?domain=dsu.edu
 // @grant        none
 // ==/UserScript==
