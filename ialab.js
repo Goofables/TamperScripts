@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-setInterval(function() {
+setInterval(() => {
     var buttons = document.getElementsByTagName("button");
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].removeAttribute("disabled");
@@ -17,5 +17,9 @@ setInterval(function() {
 //    console.log("reeee");
 }, 500);
 
-if (document.URL.includes("https://vcloud.ialab.dsu.edu/login/")) setInterval(()=>{document.getElementById("loginButton").click()}, 250);
+if (document.URL.includes("https://vcloud.ialab.dsu.edu/login/")) {
+    setInterval(() => {
+        document.getElementById("loginButton").click()
+    }, 250);
+}
 
