@@ -22,7 +22,9 @@ setTimeout(
         const button = document.createElement('button');
         button.innerText = 'Open all unread';
         button.addEventListener('click', () => {
-            getElementsByXPath("//div[contains(@class,'d2l-le-disc-post') and contains(@class,'unread')]//a[contains(@class,'d2l-linkheading-link')]/@href");
+            for (const u of getElementsByXPath("//div[contains(@class,'d2l-le-disc-post') and contains(@class,'unread')]//a[contains(@class,'d2l-linkheading-link')]")) {
+                window.open(u.href, '_blank');
+            }
         })
         document.getElementById("createThreadButtonContainer").appendChild(button);
     }, 500
