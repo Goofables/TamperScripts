@@ -14,12 +14,10 @@ setInterval(() => {
         buttons[i].removeAttribute("disabled");
         buttons[i].removeAttribute("aria-disabled");
     }
-//    console.log("reeee");
-}, 500);
+}, 1000);
 
-if (document.URL.includes("https://vcloud.ialab.dsu.edu/login/")) {
-    setInterval(() => {
-        document.getElementById("loginButton").click()
-    }, 250);
-}
+if (document.URL.includes("https://vcloud.ialab.dsu.edu/login/")) setInterval(() => {
+    document.getElementById("loginButton").click()
+}, 250);
+
 
