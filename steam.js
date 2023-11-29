@@ -3,7 +3,7 @@
 // @version      0.1
 // @description  Auto submit steam product activation codes
 // @author       Goofables
-// @match        https://store.steampowered.com/account/registerkey
+// @match        https://store.steampowered.com/account/registerkey*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=steampowered.com
 // ==/UserScript==
 
