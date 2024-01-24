@@ -11,7 +11,8 @@
 function test_images() {
     for (const e of document.getElementsByClassName("image-link")) {
         const img = document.createElement("img");
-        img.src = e.getElementsByTagName("a")[0].href;
+        img.src = "https://i.mxsmp.com/a:tineye/" + e.getElementsByTagName("a")[0].href;
+        img.referrerPolicy = "no-referrer";
         img.width = 20;
         img.height = 20;
         e.append(img);

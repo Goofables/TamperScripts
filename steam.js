@@ -11,10 +11,10 @@
 function check_code() {
     if (document.getElementById("error_display").innerHTML !== "") return;
     let code = document.getElementById("product_key").value;
+    document.getElementById("accept_ssa").checked = true;
     if (code.length < 7) return;
     if (document.getElementById("registerkey_form").style.display !== "") return;
-    document.getElementById("accept_ssa").checked = true;
     document.getElementById("register_btn").click()
 }
 
-setInterval(check_code,100);
+setInterval(check_code,50);
